@@ -1,8 +1,11 @@
 package sha1
 
-import "fmt"
+import (
+	"testing"
+)
 
-func TestGenerate() {
-	r := Sha1()
-	fmt.Println(r)
+func TestSha1(t *testing.T) {
+	var r string
+	r = Sha1("still unfinished")
+	t.Logf("%s",r)
 }
